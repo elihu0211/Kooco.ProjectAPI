@@ -1,0 +1,62 @@
+type: collection.insomnia.rest/5.0
+name: MOJO
+meta:
+  id: wrk_7f78a55a5c764a99a0ee2eb5dbba5348
+  created: 1762913572096
+  modified: 1762930269505
+  description: ""
+collection:
+  - name: 遊戲
+    meta:
+      id: fld_34a96c6c68ae4308bbfeb732985865ce
+      created: 1762914548174
+      modified: 1762914548174
+      sortKey: -1762914548174
+      description: ""
+    children:
+      - url: https://{{address}}/api/app/game/start
+        name: 遊戲開局
+        meta:
+          id: req_d702db3b43794972b0e3138d6b24a52b
+          created: 1762913572103
+          modified: 1762914558314
+          isPrivate: false
+          description: ""
+          sortKey: -1762914558298
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	"sessionId": "U1EIbC4i80Ft0LseVfHxrhWC9Q8XCbCQml8Eqd2tUtUmrstmAG62sgJXueqSKauxnnwgg-R437qoaG8P0yCDeo5XtroIcQUOXpZkibWd7oBcnZVYIMLBE0T69hH_BMkYjVB4pfHJr3AG30Lef9axdw6xr-F72xkGkeSEnIEfROpxhdFBOv1Zvr-EGtuiorbyDjcxq4kYc8ObGvcCtxdbWZAGu2c0C32kodzO6XQH4kNU-gqtx0-EZY9j5mdk0pMxVOJpAhKGcJRXnbDv3qyOVut7viyRG6s8pKYHN_gO6Aeqwpe3FvK7VYQKWExJEkBz3Uv0gDyfY42NQSPh32io8CheXbQfO5aF5xvR8GDiyerxiJ-alcK3v5pOOO6ZnmGZs9XQPwbJTPZnjNfKnMAoTRy9TWoQZ1O7k8vlfmDjurOMsugpIi7-4IW1EvWYajtiFSU2hIDhZr6vEifPynu0jdi66p0WrSymh0n64Acjyg0",
+                "oldGameNo": null
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_31695b5cb98fa50ed10e217ddd7023d43c62c3b2
+    created: 1762913572099
+    modified: 1762913572099
+environments:
+  name: Base Environment
+  meta:
+    id: env_31695b5cb98fa50ed10e217ddd7023d43c62c3b2
+    created: 1762913572097
+    modified: 1762914315586
+    isPrivate: false
+  data:
+    address: localhost:44393
+    "": ""

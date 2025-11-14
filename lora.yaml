@@ -1,0 +1,98 @@
+type: collection.insomnia.rest/5.0
+name: LORA
+meta:
+  id: wrk_ccd656a133e94589935f6c2dc6b3c429
+  created: 1762930225995
+  modified: 1762930225995
+  description: ""
+collection:
+  - name: 機台
+    meta:
+      id: fld_cc52cbd5adba4d38af2fdbb46ffd6997
+      created: 1762930367341
+      modified: 1762930367341
+      sortKey: -1762930367341
+      description: ""
+    children:
+      - url: https://{{address}}/api/app/machine/params
+        name: 機台參數
+        meta:
+          id: req_be4c4bda03534929a04a289b6fd889e8
+          created: 1762930527175
+          modified: 1762930672217
+          isPrivate: false
+          description: ""
+          sortKey: -1762930527175
+        method: GET
+        parameters:
+          - id: pair_b9994e9913db4379b29d565b8bfb201f
+            name: tenantId
+            value: DD45F34A-5972-AE2B-7023-3A15E4537F54
+            description: ""
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 遊戲
+    meta:
+      id: fld_66ffe573fba24bd197b2ad7c2a700e48
+      created: 1762930465229
+      modified: 1762930465229
+      sortKey: -1762930465229
+      description: ""
+    children:
+      - url: https://{{address}}/api/app/game/payout-table
+        name: 遊戲賠率
+        meta:
+          id: req_967bd2d642d4412fbaad0ecad0280634
+          created: 1762930373291
+          modified: 1762930508397
+          isPrivate: false
+          description: ""
+          sortKey: -1762930468920
+        method: GET
+        parameters:
+          - id: pair_f32640800f9b44b09275a7b454345a60
+            name: riskLevel
+            value: "1"
+            description: ""
+            disabled: false
+          - id: pair_d29c82a8a93f4a48abc89bee7ce26092
+            name: rowCount
+            value: "13"
+            description: ""
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_7db309e245483618fdd82c7a99959a49a4d3d264
+    created: 1762930226005
+    modified: 1762930226005
+environments:
+  name: Base Environment
+  meta:
+    id: env_7db309e245483618fdd82c7a99959a49a4d3d264
+    created: 1762930226002
+    modified: 1762930431238
+    isPrivate: false
+  data:
+    address: localhost:44311
